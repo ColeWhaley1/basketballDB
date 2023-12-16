@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1 class="page-header">Hoops Hub</h1>
+    <ul>
+        {% for team in all_teams %}
+            <li>{{team[0]}} {{team[1]}}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+

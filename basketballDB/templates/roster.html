@@ -1,0 +1,17 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+    {%for player in players%}
+        <article class="media content-section">
+            <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#">{{ player.name }}</a>
+                <small class="text-muted">{{ player.year }}</small>
+            </div>
+            <h2><a class="player-height" href="#">{{ player.height }}</a></h2>
+            <p class="player-weight">Weight: {{ player.weight }} lbs</p> 
+            </div>
+        </article>
+    {%endfor%}
+{% endblock content %}
